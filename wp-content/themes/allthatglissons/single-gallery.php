@@ -16,8 +16,8 @@
 							    <ul>
 							        <?php foreach( $images as $image ): ?>
 							            <li>
-							                <a href="<?php echo $image['url']; ?>" rel="lightbox[gallery]">
-							                     <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+							                <a href="<?php echo $image['url']; ?>" rel="lightbox[gallery]" title="<?php echo $image['caption']; ?>">
+							                     <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['caption']; ?>" />
 							                </a>
 <!-- 							                <p><?php echo $image['caption']; ?></p> -->
 							            </li>

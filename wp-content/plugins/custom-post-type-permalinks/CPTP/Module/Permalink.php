@@ -13,10 +13,31 @@
 class CPTP_Module_Permalink extends CPTP_Module {
 
 
+	/**
+	 * Add Filter Hooks.
+	 */
 	public function add_hook() {
-		add_filter( 'post_type_link', array( $this, 'post_type_link' ), 10, 4 );
-		add_filter( 'term_link', array( $this, 'term_link' ), 10, 3 );
-		add_filter( 'attachment_link', array( $this, 'attachment_link' ), 20, 2 );
+
+		add_filter(
+			'post_type_link',
+			array( $this, 'post_type_link' ),
+			apply_filters( 'cptp_post_type_link_priority', 0 ),
+			4
+		);
+
+		add_filter(
+			'term_link',
+			array( $this, 'term_link' ),
+			apply_filters( 'cptp_term_link_priority', 0 ),
+			3
+		);
+
+		add_filter(
+			'attachment_link',
+			array( $this, 'attachment_link' ),
+			apply_filters( 'cptp_attachment_link_priority', 20 ),
+			2
+		);
 	}
 
 
@@ -149,8 +170,7 @@ class CPTP_Module_Permalink extends CPTP_Module {
 			$permalink
 		);
 		$permalink = str_replace( $search, $replace, $permalink );
-		$permalink = rtrim( home_url(), '/' ) . '/' . ltrim( $permalink, '/' );
-
+		$permalink = home_url( $permalink );
 		return $permalink;
 	}
 
@@ -206,6 +226,14 @@ class CPTP_Module_Permalink extends CPTP_Module {
 		return array( 'search' => $search, 'replace' => $replace );
 	}
 
+	/**
+	 *
+	 * get parent from term Object
+	 *
+	 * @param WP_Term|stdClass $term
+	 *
+	 * @return mixed
+	 */
 	private static function get_term_parent( $term ) {
 		if ( isset( $term->parent ) and $term->parent > 0 ) {
 			return $term->parent;
@@ -291,17 +319,26 @@ class CPTP_Module_Permalink extends CPTP_Module {
 		} else {
 			$post_type = $taxonomy->object_type[0];
 		}
+
+		$front         = substr( $wp_rewrite->front, 1 );
+		$termlink      = str_replace( $front, '', $termlink );//remove front.
+
 		$post_type_obj = get_post_type_object( $post_type );
+
+		if( empty( $post_type_obj ) ) {
+			return $termlink;
+		}
+
 		$slug          = $post_type_obj->rewrite['slug'];
 		$with_front    = $post_type_obj->rewrite['with_front'];
-		$front         = substr( $wp_rewrite->front, 1 );
-		$termlink      = str_replace( $front, '', $termlink );
 
 		if ( $with_front ) {
 			$slug = $front . $slug;
 		}
 
-		$termlink = str_replace( $wp_home, $wp_home . '/' . $slug, $termlink );
+		if( !empty( $slug )) {
+			$termlink = str_replace( $wp_home, $wp_home . '/' . $slug, $termlink );
+		}
 
 		if ( ! $taxonomy->rewrite['hierarchical'] ) {
 			$termlink = str_replace( $term->slug . '/', CPTP_Util::get_taxonomy_parents( $term->term_id, $taxonomy->name, false, '/', true ), $termlink );

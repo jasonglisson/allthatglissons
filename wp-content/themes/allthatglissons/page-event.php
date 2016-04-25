@@ -18,10 +18,6 @@ Template Name: Event
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-					<header class="entry-header">
-						<h1 class="entry-title"><?php the_title(); ?></h1>
-					</header>
-
 					<div class="entry-content">
 						<?php the_content(); ?>
 						<h3 style="color:#666;border-bottom:1px dotted #ddd;">Upcoming Events</h3> 
