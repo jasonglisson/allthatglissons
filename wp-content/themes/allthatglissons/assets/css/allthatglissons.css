@@ -2,10 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 body {
   background: url(../images/bg_home1.jpg);
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Patua One', cursive;
+  font-family: "Patua One", cursive;
   color: #ebe8dd; }
 
 a {
@@ -31,17 +31,20 @@ a {
 
 .header .top-menu {
   margin-top: 15px; }
+
 .header .row {
   margin-bottom: 0; }
+
 .header .tab-bar {
   background: #974E3F; }
+
 .header .left-small {
   border-right: 1px solid #fff; }
 
 .logo {
-  transition: 0.2s all; }
+  transition: .2s all; }
   .logo:hover {
-    opacity: 0.8; }
+    opacity: .8; }
 
 .fb {
   margin-left: 30px;
@@ -52,32 +55,35 @@ a {
   background-size: 90%;
   background-repeat: no-repeat;
   min-height: 270px; }
+
 .home .block {
   min-height: 270px; }
+
 .home .scripture {
   color: #ebe8dd;
   font-size: 1.45rem;
-  font-family: 'Patua One', cursive;
+  font-family: "Patua One", cursive;
   letter-spacing: 1px;
   padding: 30px;
   min-height: 270px;
-  background: #974E3F;
-  transition: 0.3s all; }
+  background: #865260;
+  transition: .3s all; }
   .home .scripture:hover {
-    background: rgba(151, 78, 63, 0.75); }
+    background: rgba(135, 83, 97, 0.91); }
   .home .scripture span {
     float: right;
     display: block;
     margin-top: 15px;
     margin-right: 10px; }
+
 .home .contact-wrap .contact {
   background: #826e6f;
   padding: 30px;
   color: #ebe8dd;
-  transition: 0.3s all; }
+  transition: .3s all; }
   .home .contact-wrap .contact .phone {
     font-size: 1.55rem;
-    font-family: 'Patua One', cursive; }
+    font-family: "Patua One", cursive; }
   .home .contact-wrap .contact .email a {
     color: #ebe8dd;
     font-size: 1.05rem;
@@ -85,26 +91,29 @@ a {
     padding-bottom: 5px; }
   .home .contact-wrap .contact:hover {
     background: rgba(130, 111, 112, 0.87); }
+
 .home .events-wrap {
   color: #ebe8dd; }
   .home .events-wrap h4, .home .events-wrap h5 {
     font-size: 1.45rem;
-    font-family: 'Patua One', cursive;
+    font-family: "Patua One", cursive;
     letter-spacing: 1px; }
   .home .events-wrap .events {
     padding: 15px 30px;
     min-height: 270px;
-    transition: 0.3s all;
-    background: #974E3F;
-    transition: 0.3s all; }
+    transition: .3s all;
+    background: #865260;
+    transition: .3s all; }
     .home .events-wrap .events:hover {
-      background: rgba(151, 78, 63, 0.75); }
+      background: rgba(135, 83, 97, 0.91); }
     .home .events-wrap .events a {
       color: #ebe8dd;
       border-bottom: 1px dashed #bdb9ab;
       padding-bottom: 5px; }
+
 .home .home-slide-1 li, .home .home-slide-2 li {
   display: none; }
+
 .home .slick-slider {
   margin: 0; }
   .home .slick-slider li {
@@ -131,7 +140,7 @@ a {
     background-size: 102%;
     background-repeat: no-repeat;
     background-position: center center;
-    transition: 0.3s ease-in-out; }
+    transition: .3s ease-in-out; }
     #gallery-wrap .masks:hover {
       transform: rotate(-3deg);
       background-size: 110%; }
@@ -142,17 +151,17 @@ a {
     min-height: 278px; }
   #about-wrap .about {
     font-size: 1.45rem;
-    font-family: 'Patua One', cursive;
+    font-family: "Patua One", cursive;
     letter-spacing: 1px;
     padding: 15px 30px;
     min-height: 270px;
-    transition: 0.3s all;
+    transition: .3s all;
     background: #826e6f;
-    transition: 0.3s all; }
+    transition: .3s all; }
     #about-wrap .about:hover {
       background: rgba(151, 78, 63, 0.75); }
     #about-wrap .about .about-home-txt {
-      font-family: 'Raleway', sans-serif; }
+      font-family: "Raleway", sans-serif; }
       #about-wrap .about .about-home-txt p {
         font-size: 1.3rem;
         color: #ebe8dd;
@@ -171,7 +180,7 @@ a {
       list-style: none;
       width: 100%;
       background: #5f615e;
-      transition: 0.2s all; }
+      transition: .2s all; }
       .gallery-pics .gallery-list li a {
         width: 100%;
         display: block;
@@ -238,30 +247,24 @@ a {
   .logo {
     display: block;
     margin: 0 auto; }
-
   .home-slide-1, .home-slide-2, .about-img {
     width: 270px;
     height: 270px;
     margin: 0 auto !important;
     display: block; }
-
   .columns {
-    margin-bottom: 30px; }
- }
+    margin-bottom: 30px; } }
 
 @media only screen and (min-width: 40.063em) {
   .logo {
     display: block;
     margin: 0 auto; }
-
   .home-slide-1, .home-slide-2, .about-img {
     width: 270px;
     height: 270px;
     margin: 0 auto !important;
     display: block; }
-
   .columns {
-    margin-bottom: 30px; }
- }
+    margin-bottom: 30px; } }
 
 /* min-width 641px, medium screens */

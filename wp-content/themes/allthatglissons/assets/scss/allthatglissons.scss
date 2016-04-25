@@ -5,7 +5,6 @@
 $Patua: 'Patua One', cursive;
 $raleway: 'Raleway', sans-serif;
 
-
 // Global Styles
 
 body {
@@ -105,10 +104,10 @@ a {
 		letter-spacing: 1px;
 		padding: 30px;
 		min-height: 270px;
-		background: #974E3F;
+		background: #865260;
 		transition: .3s all;		
 		&:hover {
-			background: rgba(151, 78, 63, 0.75);			
+			background: rgba(135, 83, 97, 0.91);		
 		}			
 		span {
 			float:right;
@@ -152,10 +151,10 @@ a {
 			padding: 15px 30px;	
 			min-height: 270px;	
 			transition: .3s all;
-			background: #974E3F;
+			background: #865260;
 			transition: .3s all;
 			&:hover {
-				background: rgba(151, 78, 63, 0.75);			
+				background: rgba(135, 83, 97, 0.91);			
 			}	
 			a {
 				color:#ebe8dd;
