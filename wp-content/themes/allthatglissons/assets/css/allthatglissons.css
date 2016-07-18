@@ -28,6 +28,7 @@ a {
       text-transform: uppercase;
       color: #826e6f; }
       #menu-main-menu-1 li a:hover {
+        color: rgba(135, 83, 97, 0.91);
         border-bottom: 1px dotted #826e6f;
         padding-bottom: 3px; }
   #menu-main-menu-1 li:nth-of-type(2) {
