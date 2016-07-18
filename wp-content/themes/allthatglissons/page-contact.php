@@ -22,7 +22,7 @@ Template Name: Contact
 					    					
     			</div> <!-- end #main -->
 					<div id="map" class="section large-6 columns">
-						<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+						<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs0Ez1GToF6Anc2o9XHMivnHF_RK57Cwk"></script>
 						<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
 						<script type="text/javascript">
 						function initialize() {

@@ -22,7 +22,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 a {
-	color: #974E3F;
+	color: #826e6f;
+	border-bottom: 1px dotted rgba(135, 83, 97, 0);	
+	&:hover {
+    color: rgba(135, 83, 97, 0.91);		
+    border-bottom: 1px dotted rgba(135, 83, 97, 0.91);		
+	}
 }
 
 // Main Menu
@@ -224,8 +229,8 @@ a {
 		background: #826e6f;
 		transition: .3s all;
 		&:hover {
-			background: rgba(151, 78, 63, 0.75);			
-		}			
+			background: rgba(130, 111, 112, 0.87);				
+		}	
 		.about-home-txt {
 			font-family: $raleway;
 			p {
@@ -268,8 +273,8 @@ a {
 					}
 				}
 				&:hover {
-					background: #974E3F;
-				} 				
+					background: rgba(135, 83, 97, 0.91);		
+				}				
 			}
 			li:nth-of-type(1) {
 				border-bottom: 1px solid #fff;
@@ -316,7 +321,7 @@ a {
 }
 
 .page-title {
-	color: #974E3F;	
+	color:#826e6f;
 }
 
 .single-gallery, .single-event {

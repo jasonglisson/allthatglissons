@@ -9,7 +9,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #ebe8dd; }
 
 a {
-  color: #974E3F; }
+  color: #826e6f;
+  border-bottom: 1px dotted rgba(135, 83, 97, 0); }
+  a:hover {
+    color: rgba(135, 83, 97, 0.91);
+    border-bottom: 1px dotted rgba(135, 83, 97, 0.91); }
 
 #menu-main-menu-1 {
   margin: 60px 0 0 40px; }
@@ -159,7 +163,7 @@ a {
     background: #826e6f;
     transition: .3s all; }
     #about-wrap .about:hover {
-      background: rgba(151, 78, 63, 0.75); }
+      background: rgba(130, 111, 112, 0.87); }
     #about-wrap .about .about-home-txt {
       font-family: "Raleway", sans-serif; }
       #about-wrap .about .about-home-txt p {
@@ -193,7 +197,7 @@ a {
           padding: 13px 20px;
           float: left; }
       .gallery-pics .gallery-list li:hover {
-        background: #974E3F; }
+        background: rgba(135, 83, 97, 0.91); }
     .gallery-pics .gallery-list li:nth-of-type(1) {
       border-bottom: 1px solid #fff; }
       .gallery-pics .gallery-list li:nth-of-type(1) img {
@@ -219,7 +223,7 @@ a {
     text-transform: capitalize; }
 
 .page-title {
-  color: #974E3F; }
+  color: #826e6f; }
 
 .single-gallery #main ul, .single-event #main ul {
   margin: 0; }
