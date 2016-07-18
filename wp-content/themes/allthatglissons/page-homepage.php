@@ -153,7 +153,10 @@ Template Name: Homepage
 			</div>
 		</div>
 		<div class="large-3 columns">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-home.jpg" alt="home1" class="about-img" width="270" height="264">						
+		<img src="<?php
+			$feat_image = wp_get_attachment_url( get_post_thumbnail_id(9) );
+			echo $feat_image;
+		?>" alt="home1" class="about-img" width="270" height="264">								
 		</div>		
 	</div>	
 </div>	
