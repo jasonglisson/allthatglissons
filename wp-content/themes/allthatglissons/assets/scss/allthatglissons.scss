@@ -1,8 +1,8 @@
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Patua+One);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+@import url(https://fonts.googleapis.com/css?family=Merienda);
 
-$Patua: 'Patua One', cursive;
+$Patua: 'Merienda', cursive;
 $raleway: 'Raleway', sans-serif;
 
 // Global Styles
@@ -40,9 +40,10 @@ a {
 		float:left;
 		padding:0 15px;
 		a {
-	    font-size: 1.4rem;
+			font-family: $Patua;			
+	    font-size: 1.7rem;
 	    font-weight: 600;
-	    text-transform: uppercase;	
+// 	    text-transform: uppercase;	
 	    color: #826e6f;	
 	    &:hover {
 				color: rgba(135, 83, 97, 0.91);				    
@@ -83,6 +84,7 @@ a {
 
 .fb {
 	margin-left:30px;
+	margin-top: 12px;	
 	float: right;
 }
 

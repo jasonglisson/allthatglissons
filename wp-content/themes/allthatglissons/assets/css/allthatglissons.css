@@ -1,11 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Patua+One);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+@import url(https://fonts.googleapis.com/css?family=Merienda);
 body {
   background: url(../images/bg_home1.jpg);
   font-family: "Raleway", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Patua One", cursive;
+  font-family: "Merienda", cursive;
   color: #ebe8dd; }
 
 a {
@@ -23,9 +23,9 @@ a {
     float: left;
     padding: 0 15px; }
     #menu-main-menu-1 li a {
-      font-size: 1.4rem;
+      font-family: "Merienda", cursive;
+      font-size: 1.7rem;
       font-weight: 600;
-      text-transform: uppercase;
       color: #826e6f; }
       #menu-main-menu-1 li a:hover {
         color: rgba(135, 83, 97, 0.91);
@@ -53,6 +53,7 @@ a {
 
 .fb {
   margin-left: 30px;
+  margin-top: 12px;
   float: right; }
 
 .home .home-img-1 {
@@ -67,7 +68,7 @@ a {
 .home .scripture {
   color: #ebe8dd;
   font-size: 1.45rem;
-  font-family: "Patua One", cursive;
+  font-family: "Merienda", cursive;
   letter-spacing: 1px;
   padding: 30px;
   min-height: 270px;
@@ -88,7 +89,7 @@ a {
   transition: .3s all; }
   .home .contact-wrap .contact .phone {
     font-size: 1.55rem;
-    font-family: "Patua One", cursive; }
+    font-family: "Merienda", cursive; }
   .home .contact-wrap .contact .email a {
     color: #ebe8dd;
     font-size: 1.05rem;
@@ -101,7 +102,7 @@ a {
   color: #ebe8dd; }
   .home .events-wrap h4, .home .events-wrap h5 {
     font-size: 1.45rem;
-    font-family: "Patua One", cursive;
+    font-family: "Merienda", cursive;
     letter-spacing: 1px; }
   .home .events-wrap .events {
     padding: 15px 30px;
@@ -156,7 +157,7 @@ a {
     min-height: 278px; }
   #about-wrap .about {
     font-size: 1.45rem;
-    font-family: "Patua One", cursive;
+    font-family: "Merienda", cursive;
     letter-spacing: 1px;
     padding: 15px 30px;
     min-height: 270px;
